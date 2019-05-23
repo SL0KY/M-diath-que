@@ -1,0 +1,22 @@
+<web-app>
+<servlet>
+	<servlet-name>aviation</servlet-name>
+	<servlet-class>TestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>aviation</servlet-name>
+	<url-pattern>/home</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>auth</servlet-name>
+	<servlet-class>Session</servlet-class>
+	<init-param>
+		<param-name>driver</param-name>
+		<param-value>oracle.jdbc.OracleDriver</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>auth</servlet-name>
+	<url-pattern>/auth</url-pattern>
+</servlet-mapping>
+</web-app>
